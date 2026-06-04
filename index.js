@@ -24,7 +24,7 @@ const io = new Server(server, {
   },
 });
 
-// 🔌 Set the IO instance in app.js so controllers can access it
+//Set the IO instance in app.js so controllers can access it
 setIO(io);
 
 initSocket(io); 
@@ -51,3 +51,5 @@ process.on('SIGINT', () => {
     process.exit(0);
   });
 });
+
+export default server;
